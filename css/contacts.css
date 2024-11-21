@@ -1,0 +1,97 @@
+body {
+    background-image: url("../images/orig.jfif");
+    backdrop-filter: blur(7px);
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.cont {
+    color: #fbf0e8;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.contact {
+    margin: 2vh auto;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 16vh;
+    font-size: 3.2292vw;
+}
+
+.contact img {
+    margin-right: 2vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+.adress {
+    text-align: center;
+    color: #fbf0e8;
+    font-size: 1.4vw;
+}
+
+.map {
+    height: 42vh;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .cont {
+        width: 90%;
+        font-size: 4vw;
+    }
+
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 90%;
+        height: auto;
+        font-size: 4vw;
+    }
+
+    .contact img {
+        margin: 1vh 0;
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .adress {
+        font-size: 3vw;
+        margin-top: 1vh;
+    }
+
+    .map {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont {
+        width: 95%;
+        font-size: 5vw;
+    }
+
+    .contact {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    .contact img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .adress {
+        font-size: 4vw;
+    }
+
+    .map {
+        height: 30vh;
+    }
+}

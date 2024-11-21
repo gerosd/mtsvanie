@@ -1,0 +1,110 @@
+body {
+    background-image: url("../images/fon.jpeg");
+    background-repeat: no-repeat;
+    backdrop-filter: blur(7px);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    margin: 5vh auto 0 auto;
+    border: 2px solid beige;
+    border-radius: 2vw;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    padding: 2vh;
+}
+
+.f-categ {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2vh;
+    width: 100%;
+}
+
+.menu h1 {
+    color: #7c3138;
+    text-align: center;
+    margin: 0.5%;
+    font-size: 5vh;
+}
+
+.dish {
+    border: 0.3vw solid #7c3138;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+
+.dish p {
+    text-align: center;
+    color: #fbf0e8;
+    font-size: 2.5vh;
+    margin-top: 4%;
+}
+
+.dish img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+}
+
+.fire {
+    position: absolute;
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-top: 220px;
+    margin-left: 180px;
+}
+
+.fire img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+    .dish {
+        width: 30%;
+    }
+
+    .menu h1 {
+        font-size: 6vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dish {
+        width: 20%;
+    }
+
+    .menu h1 {
+        font-size: 7vh;
+    }
+}
+
+@media (max-width: 767px) {
+    .dish {
+        width: 90%;
+    }
+
+    .menu h1 {
+        font-size: 4vh;
+    }
+
+    .menu {
+        padding: 1vh;
+    }
+
+    .fire {
+        width: 15vw;
+        height: 15vw;
+    }
+}

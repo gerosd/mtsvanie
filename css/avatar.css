@@ -1,0 +1,149 @@
+body {
+    position: absolute;
+    margin: 0;
+    background-image: url("../images/rest.jpeg");
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100vh;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 9% auto;
+    background: rgba(120, 110, 48, 0.85);
+    border-top: 5px solid #7c3138;
+    border-bottom-right-radius: 1.825vw;
+    border-bottom-left-radius: 1.825vw;
+    width: 35%;
+}
+
+.forma {
+    text-align: center;
+    width: 100%;
+    margin-top: 12%;
+}
+
+.forma span {
+    vertical-align: -4px;
+    margin-right: 2%;
+    font-size: 32px;
+}
+
+.forma form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.forma form button {
+    transition: 0.3s;
+    cursor: pointer;
+    background: rgb(158, 48, 61);
+    color: #fbeceb;
+    margin: 0 auto;
+    width: 35%;
+    height: 55px;
+    font-size: 30px;
+    border: none;
+    border-bottom: 5px solid #7c3138;
+}
+
+.forma form button:hover {
+    transform: scale(1.2);
+    background: #892f39;
+    border-bottom: 5px solid #571b21;
+}
+
+.forma form label input {
+    font-size: 22px;
+    width: 70%;
+    height: 40px;
+}
+
+.image {
+    margin-left: 25px;
+}
+
+.main a {
+    transition: 0.3s;
+    margin-top: 3%;
+    font-size: 22px;
+    color: #fbeceb;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+img {
+    width: 38px;
+    height: 38px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    margin-top: 1.5vh;
+}
+
+@media (max-width: 1200px) {
+    .main {
+        width: 50%;
+    }
+
+    .forma span {
+        font-size: 28px;
+    }
+
+    .forma form button {
+        width: 50%;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .forma span {
+        font-size: 24px;
+    }
+
+    .forma form label input {
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .main a {
+        font-size: 20px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        width: 95%;
+        margin: 10% auto;
+    }
+
+    .forma span {
+        font-size: 20px;
+    }
+
+    .forma form button {
+        height: 50px;
+        font-size: 20px;
+    }
+}
